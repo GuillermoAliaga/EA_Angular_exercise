@@ -1,0 +1,6 @@
+Video:
+https://drive.google.com/drive/u/1/folders/1UwvnCp1VQk7zFsj2jQiiFG3GwOfvsGzw (En el video se me olvida mencionar que también cambio el colspan del book-list de 9 a 10 básicamente porque añado un campo más, el de editorial)
+Uso IA: (Claude)
+- En mi proyecto de angular tengo que añadir un campo editorial, en el book-list necesito el header y el body, el header si se como se pone pero como sería el body? Solución: {{ book.publisher || '—' }}, esto básicamente quiere decir muestra book.publisher y si no tiene un valor vállido muestra - (después de que me haya dado la respuesta parece bastante lógico pero no había caido).
+-  @if (book.publisher) {
+            <span class="muted">{{ book.publisher }}</span> en las cards el visual me ha aconsejado esto, y si iba a poner algo así pero no acabo de entender del todo el muted y porque no puedo poner un <p class = "card-text"</p> que era lo que tenia pensado desde un principio. Solución: Técnicamente se puden poner ambas lo que pasa que para la editorial al ser un campo pequeño tiene mas sentido la class = muted con los span, porque suele indicar información secundaria.

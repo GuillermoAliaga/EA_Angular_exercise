@@ -41,6 +41,7 @@ testem.log
 /typings
 __screenshots__/
 *.md
+!log.md
 !README.md
 !GUIA.md
 !EJERCICIO.md
